@@ -187,6 +187,13 @@
 						<includeTestSourceDirectory>true</includeTestSourceDirectory>
 						<violationSeverity>warning</violationSeverity>
 					</configuration>
+					<dependencies>
+						<dependency>
+							<groupId>com.puppycrawl.tools</groupId>
+							<artifactId>checkstyle</artifactId>
+							<version>${checkstyle.version}</version>
+						</dependency>
+					</dependencies>
 				</plugin>
 
 				<plugin>
