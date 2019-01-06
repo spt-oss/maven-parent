@@ -68,6 +68,7 @@
 		<maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
 		<maven-release-plugin.version>2.5.3</maven-release-plugin.version>
 		<license-maven-plugin.version>3.0</license-maven-plugin.version>
+		<minify-maven-plugin.version>1.7.6</minify-maven-plugin.version>
 
 	</properties>
 
@@ -288,6 +289,37 @@ limitations under the License.</inlineHeader>
 							<version>${license-maven-plugin.version}</version>
 						</dependency>
 					</dependencies>
+				</plugin>
+
+				<plugin>
+					<groupId>com.samaxes.maven</groupId>
+					<artifactId>minify-maven-plugin</artifactId>
+					<version>${minify-maven-plugin.version}</version>
+					<executions>
+						<execution>
+							<id>default-minify</id>
+							<goals>
+								<goal>minify</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<closureLanguage>ECMASCRIPT6</closureLanguage>
+						<cssEngine>YUI</cssEngine>
+						<cssSourceDir>.</cssSourceDir>
+						<cssSourceIncludes>
+							<cssSourceInclude>**/*.css</cssSourceInclude>
+						</cssSourceIncludes>
+						<jsEngine>CLOSURE</jsEngine>
+						<jsSourceDir>.</jsSourceDir>
+						<jsSourceIncludes>
+							<jsSourceInclude>**/*.js</jsSourceInclude>
+						</jsSourceIncludes>
+						<nosuffix>true</nosuffix>
+						<skipMerge>true</skipMerge>
+						<webappSourceDir>${project.basedir}/src/main/resources/webapp</webappSourceDir>
+						<webappTargetDir>${project.build.directory}/classes/webapp</webappTargetDir>
+					</configuration>
 				</plugin>
 
 			</plugins>
