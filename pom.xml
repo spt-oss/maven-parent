@@ -88,7 +88,7 @@
 		</repository>
 		<repository>
 			<id>sonatype</id>
-			<url>https://oss.sonatype.org/content/groups/staging</url>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</repository>
 	</repositories>
 
@@ -99,7 +99,7 @@
 		</pluginRepository>
 		<pluginRepository>
 			<id>sonatype</id>
-			<url>https://oss.sonatype.org/content/groups/staging</url>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</pluginRepository>
 	</pluginRepositories>
 
