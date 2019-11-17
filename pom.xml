@@ -4,13 +4,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.github.spt-oss</groupId>
-	<artifactId>spt-oss-parent</artifactId>
-	<version>8.0.2-SNAPSHOT</version>
+	<artifactId>oss-parent</artifactId>
+	<version>8.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>SPT OSS Parent</name>
+	<name>OSS Parent</name>
 	<description>Parent POM for OSS projects</description>
-	<url>https://github.com/spt-oss/spt-oss-parent</url>
+	<url>https://github.com/spt-oss/oss-parent</url>
 	<inceptionYear>2018</inceptionYear>
 
 	<organization>
@@ -33,8 +33,8 @@
 	</developers>
 
 	<scm>
-		<url>https://github.com/spt-oss/spt-oss-parent/tree/master</url>
-		<connection>scm:git:git@github.com:spt-oss/spt-oss-parent.git</connection>
+		<url>https://github.com/spt-oss/oss-parent/tree/master</url>
+		<connection>scm:git:git@github.com:spt-oss/oss-parent.git</connection>
 		<tag>HEAD</tag>
 	</scm>
 
@@ -57,14 +57,14 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.release>8</maven.compiler.release>
 
-		<checkstyle.version>8.21</checkstyle.version>
+		<checkstyle.version>8.26</checkstyle.version>
 		<lombok.version>1.18.8</lombok.version>
 
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-		<maven-jar-plugin.version>3.1.2</maven-jar-plugin.version>
-		<maven-source-plugin.version>3.1.0</maven-source-plugin.version>
+		<maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
+		<maven-source-plugin.version>3.2.0</maven-source-plugin.version>
 		<maven-checkstyle-plugin.version>3.1.0</maven-checkstyle-plugin.version>
-		<maven-javadoc-plugin.version>3.1.0</maven-javadoc-plugin.version>
+		<maven-javadoc-plugin.version>3.1.1</maven-javadoc-plugin.version>
 		<maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
 		<maven-release-plugin.version>2.5.3</maven-release-plugin.version>
 		<license-maven-plugin.version>3.0</license-maven-plugin.version>
@@ -317,8 +317,8 @@ limitations under the License.</inlineHeader>
 						</jsSourceIncludes>
 						<nosuffix>true</nosuffix>
 						<skipMerge>true</skipMerge>
-						<webappSourceDir>${project.basedir}/src/main/resources/webapp</webappSourceDir>
-						<webappTargetDir>${project.build.directory}/classes/webapp</webappTargetDir>
+						<webappSourceDir>${project.basedir}/src/main/resources</webappSourceDir>
+						<webappTargetDir>${project.build.directory}/classes</webappTargetDir>
 					</configuration>
 				</plugin>
 
