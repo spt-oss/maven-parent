@@ -4,13 +4,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.github.spt-oss</groupId>
-	<artifactId>oss-parent</artifactId>
+	<artifactId>maven-parent</artifactId>
 	<version>8.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>OSS Parent</name>
-	<description>Parent POM for OSS projects</description>
-	<url>https://github.com/spt-oss/oss-parent</url>
+	<name>Maven Parent</name>
+	<description>Parent POM for Maven projects</description>
+	<url>https://github.com/spt-oss/maven-parent</url>
 	<inceptionYear>2018</inceptionYear>
 
 	<organization>
@@ -33,8 +33,8 @@
 	</developers>
 
 	<scm>
-		<url>https://github.com/spt-oss/oss-parent/tree/master</url>
-		<connection>scm:git:git@github.com:spt-oss/oss-parent.git</connection>
+		<url>https://github.com/spt-oss/maven-parent/tree/master</url>
+		<connection>scm:git:git@github.com:spt-oss/maven-parent.git</connection>
 		<tag>HEAD</tag>
 	</scm>
 

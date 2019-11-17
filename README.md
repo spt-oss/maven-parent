@@ -1,9 +1,9 @@
-# OSS Parent
+# Maven Parent
 
-[![circleci](https://img.shields.io/badge/circleci-oss--parent-brightgreen.svg)](https://circleci.com/gh/spt-oss/oss-parent)
-[![maven central](https://img.shields.io/badge/maven_central-oss--parent-blue.svg)](https://mvnrepository.com/artifact/com.github.spt-oss/oss-parent)
+[![circleci](https://img.shields.io/badge/circleci-maven--parent-brightgreen.svg)](https://circleci.com/gh/spt-oss/maven-parent)
+[![maven central](https://img.shields.io/badge/maven_central-maven--parent-blue.svg)](https://mvnrepository.com/artifact/com.github.spt-oss/maven-parent)
 
-* Parent POM for OSS projects
+* Parent POM for Maven projects
 
 ## Usage
 
@@ -12,7 +12,7 @@
 	```xml
 	<parent>
 	    <groupId>com.github.spt-oss</groupId>
-	    <artifactId>oss-parent</artifactId>
+	    <artifactId>maven-parent</artifactId>
 	    <version>8.1.0-SNAPSHOT</version>
 	</parent>
 	```
